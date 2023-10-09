@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="review"
+            type="be.heb.g48982.myfirstapp.database.Review" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        tools:layout_editor_absoluteY="81dp">
+
+
+        <ImageView
+            android:id="@+id/beer_avatar_image"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/image1"
+            android:contentDescription="@string/profile_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:reviewImage="@{review}"
+            app:srcCompat="@drawable/circle"
+            tools:background="@tools:sample/avatars"
+            tools:srcCompat="@drawable/circle" />
+
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="228dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="15sp"
+            app:commentString="@{review}"
+            app:layout_constraintStart_toEndOf="@+id/beer_avatar_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/cities" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

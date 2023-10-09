@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="be.heb.g48982.myfirstapp.viewmodel.SearchViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/maroon"
+        tools:context=".ui.SearchFragment">
+
+        <TextView
+            android:id="@+id/avatar_text_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_a_beer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/include_avatar_picker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <include
+            android:id="@+id/include_avatar_picker"
+            layout="@layout/layout_picker"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/state_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar_text_label" />
+
+        <AutoCompleteTextView
+            android:id="@+id/state_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/pickAState"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/city_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_avatar_picker" />
+
+        <EditText
+            android:id="@+id/city_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/pickACity"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/pickAType"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/search_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_text">
+
+            <AutoCompleteTextView
+                android:id="@+id/type_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="@string/begin_search"
+            android:text="@string/begin_search"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">BrewUS</string>
+
+    <string name="about">About</string>
+    <string name="profile_image">Profile image</string>
+
+    <string-array name="Types">
+        <item>micro</item>
+        <item>regional</item>
+        <item>brewpub</item>
+        <item>large</item>
+        <item>bar</item>
+        <item>contract</item>
+        <item>proprieter</item>
+        <item>planing</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_a_beer">select state,city and type</string>
+    <string name="chooseAstate">Enter a State</string>
+    <string name="pickAState">Enter A State</string>
+    <string name="pickACity">"Enter a city "</string>
+    <string name="pickAType">pick a type</string>
+    <string name="begin_search">search</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="email">email</string>
+    <string name="forgot_password">forgot_password</string>
+    <string name="first_name">first_name</string>
+    <string name="last_name">last_name</string>
+    <string name="create_account">create_account</string>
+    <string name="password">password</string>
+    <string name="terms">HE2B &amp; 2023</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signUpImage">sign up image</string>
+    <string name="add_review"> max 50 characters</string>
+    <string name="review_add"> ADD REVIEW</string>
+
+    <string name="all_reviews">ALL REVIEWS</string>
+    <string name="us_breweries">US BREWERIES</string>
+    <string name="fun_fact1">In 2021, the U.S. beer industry shipped (sold) 208.6 million barrels of beer (one barrel = 31 gallons, one traditional keg in a bar = half a barrel). In other words, in 2021 the U.S. beer industry shipped the equivalent of more than 2.9 billion cases (24 12-ounce containers) of beer. (Source: U.S. TTB and U.S. Commerce Department, 2022)</string>
+    <string name="fun_fact2">In 2021, 81% of all beer was domestically produced in the U.S., and 19% was imported from more than 100 countries worldwide. (Source: U.S. TTB and U.S. Commerce Department, 2022)</string>
+    <string name="fun_fact3">In 2019, the U.S. beer industry sold about $120 billion in beer and malt-based beverages to U.S. consumers through retail beer establishments. However, in 2020 retail sales fell to $100 billion due to widespread closures of restaurants, bars, stadiums and other on-premise accounts. (Source: Beer Institute and NBWA Industry Affairs, 2021)</string>
+    <string name="disclaimer">This app is design for searching breweries across the United States of America.
+    You can also see other people review and add your own.
+    </string>
+    <string name="random_beer_image">random beer image</string>
+    <string name="sign_out">Sign Out</string>
+
+</resources>

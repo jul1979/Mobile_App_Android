@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "632848077002",
+    "firebase_url": "https://brewery-cb13b-default-rtdb.firebaseio.com",
+    "project_id": "brewery-cb13b",
+    "storage_bucket": "brewery-cb13b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632848077002:android:3249af5bc5d1548feca433",
+        "android_client_info": {
+          "package_name": "be.heb.g48982.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632848077002-knths0i51fkgkeje7ldrpd35di4ophcn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "be.heb.g48982.myfirstapp",
+            "certificate_hash": "261f9193893adbb237980004dd2da7ce50305662"
+          }
+        },
+        {
+          "client_id": "632848077002-u6f31ttjj1p01rkescvj4abcj4iohh6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYO0SjjdgzcKiDxjLvUo1BWNCKTERyJw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632848077002-u6f31ttjj1p01rkescvj4abcj4iohh6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
